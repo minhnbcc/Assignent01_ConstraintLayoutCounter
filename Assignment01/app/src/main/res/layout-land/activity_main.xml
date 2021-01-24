@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="199dp"
+            android:layout_height="265dp"
+            android:layout_margin="@dimen/margin_5dp"
+            android:layout_marginStart="40dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.746">
+
+            <Button
+                android:id="@+id/btnToast"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_5dp"
+                android:text="@string/toast"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnIncrement"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_5dp"
+                android:text="@string/count_up"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnToast" />
+
+            <Button
+                android:id="@+id/btnDecrement"
+                android:layout_width="189dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_5dp"
+                android:text="@string/count_down"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/count"
+            android:layout_width="493dp"
+            android:layout_height="261dp"
+            android:layout_margin="@dimen/margin_5dp"
+            android:background="@color/yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toEndOf="@+id/container"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.705">
+
+            <TextView
+                android:id="@+id/Counter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="150sp"
+                android:textStyle="bold"
+                tools:text="0"
+                android:textColor="?attr/colorPrimary"/>/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
