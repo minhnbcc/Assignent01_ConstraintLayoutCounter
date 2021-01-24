@@ -18,4 +18,4 @@ Your app will have three buttons:
 "Count Down" will decrement the count when clicked
 The layout will have a different arrangements when the phone is in Portrait mode than in Landscape mode:
 
-![Alt text](D:\Winter 2021\Android Programming\Dropbox\Assignent01_ConstraintLayoutCounter\Constraint Layout Counter.png?raw=true "Optional Title")
+![](D:\Winter 2021\Android Programming\Dropbox\Assignent01_ConstraintLayoutCounter\Constraint Layout Counter.png?raw=true "Optional Title")
