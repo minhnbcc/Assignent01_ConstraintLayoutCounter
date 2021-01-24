@@ -18,4 +18,4 @@ Your app will have three buttons:
 "Count Down" will decrement the count when clicked
 The layout will have a different arrangements when the phone is in Portrait mode than in Landscape mode:
 
-<img src="Constraint Layout Counter.png" width="350" style="margin-left:15px"/>
+<img src="Constraint Layout Counter.png" width="350" style="align:center"/>
